@@ -129,7 +129,7 @@ body {
   color: var(--accent-color);
 }
 
-.site-nav .link:hover::after {
+.site-nav-line::after {
   display: block;
   content: "";
   width: 100%;
@@ -497,6 +497,42 @@ body {
 }
 
 /* portfolio */
+
+.project-thumb{
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+.project-action{
+background-color:rgba(33, 150, 243, 0.9);
+
+width: 370px;
+height:100%;
+top: 100%;
+left: 0%;
+position: absolute;
+opacity: 0;
+
+padding: 63px 24px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+transform: translate(0, 100%);
+transition: 500ms display  linear ;
+
+letter-spacing: 0.03em;
+
+}
+.project-link:hover .project-action{
+  opacity: 1 ;
+  transform: translate(0, -100%);
+
+}
+
 
 .portfolio {
   padding-top: 94px;
