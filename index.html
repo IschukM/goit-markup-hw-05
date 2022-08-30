@@ -27,7 +27,9 @@
         <nav class="main-nav">
           <a href="./index.html" class="logo link"><span class="logo-web">Web</span>Studio</a>
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="site-nav-line  link current">Студія</a></li>
+            <li class="item">
+              <a href="./index.html" class="site-nav-line link current">Студія</a>
+            </li>
             <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
@@ -57,19 +59,21 @@
     <main>
       <!-- герой -->
       <section class="hero overlay">
-        <div class="blackdrop  js-hidden">
-<div class="modal">
-  <p>
-    fsdfdgdfgfdgggggggggf
-  </p>
-  <button>Close</button>
-</div>
+        <div data-modal class="blackdrop is-hidden">
+          <div class="modal">
+            <button data-modal-close class="buton-close">
+              <svg width="30px" height="30px">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button"><span>Замовити послугу</span></button>
+          <button data-modal-open type="button" class="button">
+            <span>Замовити послугу</span>
+          </button>
         </div>
-        
       </section>
 
       <!-- features -->
@@ -405,5 +409,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
